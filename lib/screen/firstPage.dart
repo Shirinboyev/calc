@@ -1,5 +1,4 @@
-import 'package:calc/home/data.dart';
-import 'package:calc/main.dart';
+import 'package:calc/function.dart';
 import 'package:flutter/material.dart';
 class FirstPage extends StatefulWidget {
   const FirstPage({super.key});
@@ -9,38 +8,37 @@ class FirstPage extends StatefulWidget {
 class _FirstPageState extends State<FirstPage> {
   @override
   Widget build(BuildContext context) {
+    List lst = [
+      'Chicken',
+      'Pizza',
+      'Burger',
+      'Somsa',
+      'Lagmon',
+    ];
     List img = [
-    'images/Burger.png',
-    'images/Chicken.png',
-    'images/Lagmon.png',
-    'images/Pizza.png',
-    'images/Somsa.png',
+     'images/Chicken.png',
+     'images/Pizza.png',
+     'images/Burger.png',
+     'images/Somsa.png',
+     'images/Lagmon.png',
     ];
-        List fod = [
-    'Burger',
-    'Chicken',
-    'Lagmon',
-    'Pizza.',
-    'Somsa.',
+    List txt = [
+      '',
     ];
-  // List app = [];
-  for (int i = 0; i<foood.length;i++){
-    img.add(i);
-  }
+  List app = [];
    return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: Text('${fod}')),
+        appBar: AppBar(title: Text('${lst[b]}')),
         body: Container(child: 
         Column(
           children: [
           Center(
-            child: TextButton(onPressed: (){
-              Navigator.pop(context,MaterialPageRoute(builder: (context) => MyApp(),));
-            }, child:Column(
+            child: Column(
               children: [
-                Image.asset('${img[1]}')
+                Image.asset('${img[b]}'),
+                Text('${txt[b]}')
               ],
-            )),
+            )
           )
         ],)
         ),

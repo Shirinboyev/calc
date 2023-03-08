@@ -1,6 +1,6 @@
-import 'home/data.dart';
-import 'home/food.dart';
-
+import 'home/map.dart';
+import 'home/class.dart';
+int b = 0;
 List getInfo(){
       List<Food> list = [];
     for (Map<dynamic,dynamic> mp in foood.values){
