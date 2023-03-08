@@ -1,5 +1,6 @@
 import 'package:calc/function.dart';
 import 'package:flutter/material.dart';
+import 'package:calc/home/map.dart';
 class FirstPage extends StatefulWidget {
   const FirstPage({super.key});
   @override
@@ -36,7 +37,7 @@ class _FirstPageState extends State<FirstPage> {
             child: Column(
               children: [
                 Image.asset('${img[b]}'),
-                Text('${txt[b]}')
+                // Text('${}')
               ],
             )
           )
